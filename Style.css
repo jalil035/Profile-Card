@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 110vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: beige;
+    }
+
+.profile-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 325px;
+    width: 100%;
+    background-color: white;
+    border-radius: 25px;
+    padding: 25px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.profile-card::before{
+    content: "" ;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 24px 24px 0 0;
+    background-color: aqua;
+    height: 36%;
+    width: 100%;
+}
+
+.image{
+    position: relative;
+    height: 140px;
+    width: 130px;
+    border-radius: 50%;
+    background-color: aqua;
+    padding: 3px;
+    margin-bottom: 10px;
+}
+
+.image .profile-img{
+height: 100%;
+width: 100%;
+object-fit: cover;
+border-radius: 50%;
+border: 3px solid wheat;
+}
+
+.profile-card .text-data{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+}
+.text-data .name{
+    font-size: 22px;
+    font-weight: 500;
+    color: darkorange
+}
+.text-data .job{
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.profile-card .media-buttons{
+    display: flex;
+    align-items: center;
+}
+
+.media-buttons .link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 34px;
+    width: 34px;
+    border-radius: 50%;
+    margin: 15px 8px;
+    background-color: blue;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.profile-card .buttons{
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.buttons .button{
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0 8px;
+    padding: 8px 24px;
+    background-color: blue;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.buttons .button:hover{
+    background-color: chocolate;
+}
+
+.profile-card .analytice{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.analytice .data{
+    display: flex;
+    align-items: center;
+    color: black;
+    padding: 0 25px;
+    border-right: 2px solid wheat;
+}
+.data i{
+    font-size: 18px;
+    margin-right: 6px;
+}
+
+.data:last-child{
+    border-right: none;
+}
